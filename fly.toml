@@ -1,0 +1,9 @@
+app = "github-mcp-server"
+primary_region = "nrt"  # 東京
+[build]
+  image = "ghcr.io/github/github-mcp-server:latest"
+[env]
+  GITHUB_MCP_SERVER_MODE = "http"
+[http_service]
+  internal_port = 8080
+  force_https = true
